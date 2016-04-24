@@ -12,7 +12,7 @@ before_install:
 
 before_script:
     - npm install
-
+    - chmod +x karma
 script: karma start my.conf.js --single-run
 
 branches:
