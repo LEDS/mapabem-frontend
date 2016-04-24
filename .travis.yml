@@ -3,10 +3,12 @@ node_js:
   - "4"
 sudo: true
 before_install:
+    - export CHROME_BIN=chromium-browser
     - export DISPLAY=:99.0
     - sh -e /etc/init.d/xvfb start
     - wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-2.4.zip
     - unzip sonar-runner-dist-2.4.zip
+    
 
 before_script:
     - npm install
