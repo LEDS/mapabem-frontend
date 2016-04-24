@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\release\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="408fd9d98dc53610e5b3f4bf4910b695ddf66ffe">
+        <dex dex="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\build\intermediates\pre-dexed\release\CordovaLib-unspecified-release_8bb289a15528f02b22e031be3f470711245830f0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1d4f25b0f6c015d56741db9fb47ccd46b9dc0932">
+        <dex dex="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_a9908b1ab95c3827619598d1262bbe36dfd90efe.jar" />
+    </item>
+
+</items>

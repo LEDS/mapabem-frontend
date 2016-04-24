@@ -1,0 +1,49 @@
+/* Empty. Add your own CSS if you like */
+.mainbackground{
+  background-color: #cfe7ff;
+}
+
+.button.button-close:hover{
+    color: red;
+}
+
+.item-divider{
+  padding: 12px;
+}
+
+.elementoDetalhesImg{
+  width: 100%;
+  height: auto;
+  margin-bottom: -15%;
+}
+
+.FAQ h3{
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  background-color: white;
+}
+
+.FAQ p{
+  align-items: center;
+  text-align: justify;
+  margin: auto;
+  padding: 15px;
+  background-color: #e2f1ff;
+}
+
+.button.button-block.button-positive{
+  margin-top: 0px;
+}
+
+.button.button-positive.icon.ion-location{
+  position: relative;
+  left: 80%;
+  bottom: -20px;
+  z-index: 3;
+}
+
+.alertPopUp{
+  font-style: italic;
+}

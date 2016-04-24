@@ -1,0 +1,51 @@
+<ion-view view-title="Detalhes">
+  <ion-content ng-repeat= "elemento in elementos">
+    <ion-item class="item item-divider">
+      {{elemento.nome}}
+    </ion-item>
+    <img class="elementoDetalhesImg" ng-src="{{elemento.imagem}}" ng-alt="{{elemento.nome}} Imagem">
+    <button class="button button-positive icon ion-location" ng-click="buscarMapa(elemento)"></button>
+    <div ng-show="descricao">
+      <ion-item class="item item-divider">
+        Descrição
+      </ion-item>
+      <div class="padding"><p>{{descricao}}</p></div>
+    </div>
+    <div ng-show="endOficial">
+      <ion-item class="item item-divider">
+        Endereço Oficial
+      </ion-item>
+      <div class="padding"><p>{{endOficial}}</p></div>
+    </div>
+    <div ng-show="endUsual">
+      <ion-item class="item item-divider">
+        Endereço Usual
+      </ion-item>
+      <div class="padding"><p>{{endUsual}}</p></div>
+    </div>
+    <div ng-show="nomeProprietario">
+      <ion-item class="item item-divider">
+        Nome Proprietário
+      </ion-item>
+      <div class="padding"><p>{{nomeProprietario}}</p></div>
+    </div>
+    <div ng-show="telefone">
+      <ion-item class="item item-divider">
+        Telefone
+      </ion-item>
+      <div class="padding"><p>{{telefone}}</p></div>
+    </div>
+    <div ng-show="artistas">
+      <ion-item class="item item-divider">
+        Artistas
+      </ion-item>
+      <ul><li ng-repeat="artista in artistas"> {{artista}}</li></ul>
+    </div>
+    <div ng-show="obras">
+      <ion-item class="item item-divider">
+        Obras
+      </ion-item>
+      <ul><li ng-repeat="obra in obras"> {{obra}}</li></ul>
+    </div>
+  </ion-content>
+</ion-view>
