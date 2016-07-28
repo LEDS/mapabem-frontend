@@ -7,15 +7,15 @@ angular.module('starter').service("elementosAPIService",function($http, Server){
          return $http.get(Server.url + "/elemento/"+id+"/?format=json");
      };
 
-      this.getElementoInComunidade = function(id){
-        return $http.get(Server.url + "/todos/comunidade/"+id+"/?format=json");
+      this.getElementoInBairro = function(id){
+        return $http.get(Server.url + "/todos/bairro/"+id+"/?format=json");
     };
 
     this.getElementoInCategoria = function(id){
       return $http.get(Server.url + "/todos/categoria/"+id+"/?format=json");
     };
 
-    this.getElementoInComunidadeCategoria = function(idComunidade,idCategoria){
-      return $http.get(Server.url + "/todos/comunidade/"+idComunidade+"/categoria/"+idCategoria+"/?format=json");
+    this.getElementoInBairroCategoria = function(idBairro,idCategoria){
+      return $http.get(Server.url + "/todos/bairro/"+idBairro+"/categoria/"+idCategoria+"/?format=json");
     };
 });

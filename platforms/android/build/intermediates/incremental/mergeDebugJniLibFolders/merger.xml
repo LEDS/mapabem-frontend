@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\libs"/></dataSet><dataSet config="debug"><source path="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Edvaldo Mantovanelli\OneDrive\LEDS\Mapa do Bem\Codigo Frontend Edvaldo\platforms\android\libs"/></dataSet><dataSet config="debug"><source path="C:\Users\Edvaldo Mantovanelli\OneDrive\LEDS\Mapa do Bem\Codigo Frontend Edvaldo\platforms\android\src\debug\jniLibs"/></dataSet></merger>

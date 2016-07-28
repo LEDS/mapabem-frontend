@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\release\jars\classes.jar"
+        jar="C:\Users\Edvaldo Mantovanelli\OneDrive\LEDS\Mapa do Bem\Codigo Frontend Edvaldo\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\release\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.2"
-        sha1="408fd9d98dc53610e5b3f4bf4910b695ddf66ffe">
-        <dex dex="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\build\intermediates\pre-dexed\release\CordovaLib-unspecified-release_8bb289a15528f02b22e031be3f470711245830f0.jar" />
+        revision="24.0.0"
+        sha1="74d78d15de9c5adf3d085971271d99d58bd9b215">
+        <dex dex="C:\Users\Edvaldo Mantovanelli\OneDrive\LEDS\Mapa do Bem\Codigo Frontend Edvaldo\platforms\android\build\intermediates\pre-dexed\release\CordovaLib-unspecified-release_094c30a21155d878807a7c702ecbd00436a03911.jar" />
     </item>
     <item
-        jar="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jar="C:\Users\Edvaldo Mantovanelli\OneDrive\LEDS\Mapa do Bem\Codigo Frontend Edvaldo\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.2"
-        sha1="1d4f25b0f6c015d56741db9fb47ccd46b9dc0932">
-        <dex dex="C:\Users\Maria\Documents\mapabem-mobile\frontend\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_a9908b1ab95c3827619598d1262bbe36dfd90efe.jar" />
+        revision="24.0.0"
+        sha1="c447e4754b50495ff2074beceb9083d60f76d927">
+        <dex dex="C:\Users\Edvaldo Mantovanelli\OneDrive\LEDS\Mapa do Bem\Codigo Frontend Edvaldo\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_7c930774a6d22c5ed00d43f995e927949a6daeb4.jar" />
     </item>
 
 </items>

@@ -1,15 +1,30 @@
-<ion-view view-title="Detalhes">
-  <ion-content ng-repeat= "elemento in elementos">
-    <ion-item class="item item-divider">
-      {{elemento.nome}}
+<ion-view class='backgroundespecificoresultado' view-title="Detalhes">
+  <ion-content class='card' ng-repeat= "elemento in elementos">
+    <ion-item class="item item-divider topo">
+      <p>
+        {{elemento.nome}}
+      </p>
     </ion-item>
-    <img class="elementoDetalhesImg" ng-src="{{elemento.imagem}}" ng-alt="{{elemento.nome}} Imagem">
+    <button class="button button-positive icon ion-android-share-alt" ng-click="shareAnywhere(elemento)"></button>
+    <img class="elementoDetalhesImg" ng-src="{{elemento.imagem.large}}" ng-alt="{{elemento.nome}} Imagem">
     <button class="button button-positive icon ion-location" ng-click="buscarMapa(elemento)"></button>
+    <div ng-show="categorias.length">
+      <ion-item class="item item-divider">
+        Categoria(s)
+      </ion-item>
+      <ul><li class="padding" ng-repeat="categoria in categorias"> {{categoria.nome}}</li></ul>
+    </div>
     <div ng-show="descricao">
       <ion-item class="item item-divider">
         Descrição
       </ion-item>
       <div class="padding"><p>{{descricao}}</p></div>
+    </div>
+    <div ng-show="linkDoVideo">
+      <ion-item class="item item-divider">
+        Link do Video
+      </ion-item>
+      <div class="padding"><p>{{linkDoVideo}}</p></div>
     </div>
     <div ng-show="endOficial">
       <ion-item class="item item-divider">
@@ -35,17 +50,17 @@
       </ion-item>
       <div class="padding"><p>{{telefone}}</p></div>
     </div>
-    <div ng-show="artistas">
+    <div ng-show="artistas.length">
       <ion-item class="item item-divider">
         Artistas
       </ion-item>
-      <ul><li ng-repeat="artista in artistas"> {{artista}}</li></ul>
+      <ul><li class="padding" ng-repeat="artista in artistas"> {{artista.nome}}</li></ul>
     </div>
-    <div ng-show="obras">
+    <div ng-show="obras.length">
       <ion-item class="item item-divider">
         Obras
       </ion-item>
-      <ul><li ng-repeat="obra in obras"> {{obra}}</li></ul>
+      <ul><li class="padding" ng-repeat="obra in obras"> {{obra.nome}}</li></ul>
     </div>
   </ion-content>
 </ion-view>

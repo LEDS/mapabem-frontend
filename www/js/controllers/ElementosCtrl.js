@@ -1,7 +1,7 @@
-angular.module('starter').controller("ElementosCtrl", function($scope, $ionicPopup, $ionicLoading, elementosVar){
-  $ionicLoading.show();
+angular.module('starter').controller("ElementosCtrl", function($scope, $location, $ionicPopup, elementosVar){
+
   $scope.elementos = elementosVar.data;
-  $ionicLoading.hide();
+
 
   if($scope.elementos.length == 0){
     $ionicPopup.alert({
@@ -11,4 +11,8 @@ angular.module('starter').controller("ElementosCtrl", function($scope, $ionicPop
    })
  };
 
+ $scope.goToRoute = function(elemento){
+   var link = 'app/elementoDetalhes/' + elemento.id;
+   $location.path(link);
+ };
 });

@@ -1,10 +1,12 @@
 <ion-view view-title="Procurar">
-  <ion-content class="padding">
-      <ion-item class="item item-divider">
+  <!-- <ion-nav-bar class="titulo">
+  </ion-nav-bar> -->
+  <ion-content class="padding mainbackground">
+      <!-- <ion-item class="item item-divider">
         Busca Geral
       </ion-item>
-      <ion-item href="#/app/comunidades">
-        Comunidades
+      <ion-item href="#/app/bairros">
+        Bairros
       </ion-item>
       <ion-item href="#/app/categorias">
         Categorias
@@ -12,39 +14,33 @@
       <ion-item href="#/app/elementos">
         Todos os Dados
       </ion-item>
-      <br>
+      <br> -->
 
-      <ion-item class="item item-divider">
+      <!-- <ion-item class="item item-divider">
         Busca Específica
-      </ion-item>
-
-      <label class="item item-input item-select">
-        <div class="input-label">Comunidades
-        <select class="form-control" ng-model="comunidadeId" ng-options="comunidade.nome for comunidade in comunidades">
-          <option value="">Selecionar</option>
-        </select>
-        </div>
-      </label>
-
-      <label class="item item-input item-select">
-        <div class="input-label">Categorias
-        <select class="form-control" ng-model="categoriaId" ng-options="categoria.nome for categoria in categorias">
-          <option value="">Selecionar</option>
-        </select>
-        </div>
-      </label>
-
-      <label><button class="button button-block button-positive" ng-click="goToRoute(comunidadeId,categoriaId)" ng-disabled="!(comunidadeId&&categoriaId)">Procurar <i class="ion-ios-search"></i></button></label>
-
-    <!-- <div class="divFloatHead"><h1 align="center">Procurar por:</h1></div>
-      <div class="divFloat">
-        <div class="list">
-          <label ng-model="elemento" class="item item-input">
-            <input type="text" placeholder="Qual local deseja procurar?">
+      </ion-item> -->
+      <div class="centralizarProcurar">
+        <div class="bairroEsqu">
+          <label class="item item-input item-select">
+            <div class="input-label">Bairros
+            <select class="form-control" ng-model="bairroId" ng-options="bairro.nome for bairro in bairros">
+              <option value="">Todos</option>
+            </select>
+            </div>
           </label>
-          <a class="procurar" href="#/app/elementoBusca/{{elemento.nome}}"><button class="button button-full button-positive">Procurar</button></a>
         </div>
-      </div> -->
+
+        <div class="">
+          <label class="item item-input item-select">
+            <div class="input-label">Categorias
+            <select class="form-control" ng-model="categoriaId" ng-options="categoria.nome for categoria in categorias">
+              <option value="">Todos</option>
+            </select>
+            </div>
+          </label>
+        </div>
+        <label><button class="button button-block button-positive" ng-click="goToRoute(bairroId,categoriaId)">Procurar <i class="ion-ios-search"></i></button></label>
+      </div>
 
   </ion-content>
 </ion-view>

@@ -1,18 +1,10 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
-        "id": "ionic-plugin-keyboard.keyboard",
+        "file": "plugins/cordova-plugin-device/www/device.js",
+        "id": "cordova-plugin-device.device",
         "clobbers": [
-            "cordova.plugins.Keyboard"
-        ],
-        "runs": true
-    },
-    {
-        "file": "plugins/com.ionic.keyboard/www/keyboard.js",
-        "id": "com.ionic.keyboard.keyboard",
-        "clobbers": [
-            "cordova.plugins.Keyboard"
+            "device"
         ]
     },
     {
@@ -24,43 +16,25 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
-        "id": "cordova-plugin-whitelist.whitelist",
-        "runs": true
-    },
-    {
-        "file": "plugins/org.apache.cordova.camera/www/CameraConstants.js",
-        "id": "org.apache.cordova.camera.Camera",
+        "file": "plugins/cordova-plugin-network-information/www/network.js",
+        "id": "cordova-plugin-network-information.network",
         "clobbers": [
-            "Camera"
+            "navigator.connection",
+            "navigator.network.connection"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js",
-        "id": "org.apache.cordova.camera.CameraPopoverOptions",
+        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+        "id": "cordova-plugin-network-information.Connection",
         "clobbers": [
-            "CameraPopoverOptions"
+            "Connection"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.camera/www/Camera.js",
-        "id": "org.apache.cordova.camera.camera",
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
         "clobbers": [
-            "navigator.camera"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js",
-        "id": "org.apache.cordova.camera.CameraPopoverHandle",
-        "clobbers": [
-            "CameraPopoverHandle"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.device/www/device.js",
-        "id": "org.apache.cordova.device.device",
-        "clobbers": [
-            "device"
+            "navigator.splashscreen"
         ]
     },
     {
@@ -71,26 +45,46 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "file": "plugins/cordova-plugin-velda-devicefeedback/DeviceFeedback.js",
+        "id": "cordova-plugin-velda-devicefeedback.DeviceFeedback",
         "clobbers": [
-            "navigator.splashscreen"
+            "window.plugins.deviceFeedback"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+        "id": "cordova-plugin-whitelist.whitelist",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+        "id": "cordova-plugin-x-socialsharing.SocialSharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
+    },
+    {
+        "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "id": "ionic-plugin-keyboard.keyboard",
+        "clobbers": [
+            "cordova.plugins.Keyboard"
+        ],
+        "runs": true
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "ionic-plugin-keyboard": "2.0.1",
-    "com.ionic.keyboard": "1.0.4",
+    "cordova-plugin-console": "1.0.2",
+    "cordova-plugin-device": "1.1.1",
     "cordova-plugin-inappbrowser": "1.0.1",
-    "cordova-plugin-whitelist": "1.0.0",
-    "org.apache.cordova.camera": "0.3.6",
-    "org.apache.cordova.console": "0.2.13",
-    "org.apache.cordova.device": "0.3.0",
-    "org.apache.cordova.geolocation": "0.3.12",
+    "cordova-plugin-network-information": "1.2.1",
+    "cordova-plugin-splashscreen": "3.2.1",
     "cordova-plugin-statusbar": "2.1.2",
-    "cordova-plugin-splashscreen": "3.2.1"
+    "cordova-plugin-velda-devicefeedback": "0.0.2",
+    "cordova-plugin-whitelist": "1.0.0",
+    "cordova-plugin-x-socialsharing": "5.1.0",
+    "ionic-plugin-keyboard": "2.0.1"
 };
 // BOTTOM OF METADATA
 });

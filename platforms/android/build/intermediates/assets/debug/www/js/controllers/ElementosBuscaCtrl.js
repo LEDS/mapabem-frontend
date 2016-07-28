@@ -1,7 +1,7 @@
-angular.module('starter').controller("ElementosBuscaCtrl", function($scope, $ionicPopup, $state, $ionicLoading, elementosVar){
-  $ionicLoading.show();
+angular.module('starter').controller("ElementosBuscaCtrl", function($scope, $location, $ionicPopup, $state, elementosVar){
+
   $scope.elementos = elementosVar.data;
-  $ionicLoading.hide();
+
 
   if($scope.elementos.length == 0){
     $ionicPopup.alert({
@@ -12,5 +12,12 @@ angular.module('starter').controller("ElementosBuscaCtrl", function($scope, $ion
      $state.go('app.procurar');
    });
  };
+
+ $scope.goToRoute = function(elemento){
+   var link = 'app/elementoDetalhes/' + elemento.id;
+   $location.path(link);
+ };
+
+
 
 });

@@ -27,8 +27,8 @@ angular.module('starter')
         }
       },
       resolve:{
-              comunidadesVar: function(comunidadesAPIService){
-                return comunidadesAPIService.getComunidades();
+              bairrosVar: function(bairrosAPIService){
+                return bairrosAPIService.getBairros();
               },
               categoriasVar: function(categoriasAPIService){
                 return categoriasAPIService.getCategorias();
@@ -36,32 +36,32 @@ angular.module('starter')
       }
     })
 
-    .state('app.comunidades', {
-      url: '/comunidades',
+    .state('app.bairros', {
+      url: '/bairros',
       views: {
         'menuContent': {
-          templateUrl: 'templates/comunidades.html',
-          controller: 'ComunidadesCtrl'
+          templateUrl: 'templates/bairros.html',
+          controller: 'BairrosCtrl'
         }
       },
       resolve:{
-              comunidadesVar: function(comunidadesAPIService){
-                return comunidadesAPIService.getComunidades();
+              bairrosVar: function(bairrosAPIService){
+                return bairrosAPIService.getBairros();
               }
       }
     })
 
-    .state('app.comunidade', {
-        url: '/comunidade/:id',
+    .state('app.bairro', {
+        url: '/bairro/:id',
         views: {
           'menuContent': {
             templateUrl: 'templates/elementos.html',
-            controller: "ElementosComunidadeCtrl"
+            controller: "ElementosBairroCtrl"
           }
         },
         resolve:{
                 elementosVar: function(elementosAPIService, $stateParams){
-                        return elementosAPIService.getElementoInComunidade($stateParams.id);
+                        return elementosAPIService.getElementoInBairro($stateParams.id);
                 }
         }
       })
@@ -111,8 +111,8 @@ angular.module('starter')
             }
           })
 
-        .state('app.elementosBusca/:idComunidade/:idCategoria', {
-            url: '/elementoBusca/:idComunidade/:idCategoria',
+        .state('app.elementosBusca/:idBairro/:idCategoria', {
+            url: '/elementoBusca/:idBairro/:idCategoria',
             views: {
               'menuContent': {
                 templateUrl: 'templates/elementos.html',
@@ -121,7 +121,7 @@ angular.module('starter')
             },
             resolve:{
                     elementosVar: function(elementosAPIService, $stateParams){
-                            return elementosAPIService.getElementoInComunidadeCategoria($stateParams.idComunidade, $stateParams.idCategoria );
+                            return elementosAPIService.getElementoInBairroCategoria($stateParams.idBairro, $stateParams.idCategoria );
                     }
             }
           })

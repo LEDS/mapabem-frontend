@@ -1,5 +1,3 @@
-angular.module('starter').controller("CategoriasCtrl", function($scope, $ionicLoading, categoriasVar){
-  $ionicLoading.show();
+angular.module('starter').controller("CategoriasCtrl", function($scope, categoriasVar){
   $scope.categorias = categoriasVar.data;
-  $ionicLoading.hide();
 });

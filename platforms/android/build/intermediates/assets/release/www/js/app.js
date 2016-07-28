@@ -1,10 +1,24 @@
 // Ionic Starter App
-angular.module('starter', ['ionic']);
+angular.module('starter', ['ionic', 'ngCordova']);
 
 angular.module('starter')
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicPopup) {
   $ionicPlatform.ready(function() {
+
+    // Check for network connection
+    if(window.Connection) {
+      if(navigator.connection.type == Connection.NONE) {
+        $ionicPopup.alert({
+          title: 'Sem Conexão com a Internet',
+          content: 'Desculpe, nenhuma conexão com a Internet detectada. Por favor conecte-se com a Internet e tente novamente.'
+        })
+        .then(function(result) {
+            ionic.Platform.exitApp();
+        });
+      }
+    }
+
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins.Keyboard) {
